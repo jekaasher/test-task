@@ -94,7 +94,7 @@ echo "Date | Hostname | Threat | DATE+time | Critical/High | Count | --- | Exter
 
 < $FILE_PATH awk '{print $1" "$2" "$3 " | " $4 " | " $5 " | " $6" "$7 " | " $8" "$9" "$10 " | " $11" "$12 " | " $13" "$14 " | " $15" "$16 " | " $17 " | " $18 " | " $19" "$20" "$21" "$22" "$23" "$24}' >> $OUT_FILE
 }
-
+# File upload directory, the same as the location of the script
 function parse_args() {
   local go_out=""
 
